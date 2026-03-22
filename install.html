@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>短い動画フィルター 導入ページ</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fffaf8;
+      --card: #ffffff;
+      --text: #24323f;
+      --muted: #637381;
+      --line: #e9eef3;
+      --mint: #dff8ef;
+      --mint-strong: #22c59e;
+      --pink: #ffe5e1;
+      --pink-strong: #ef6b5c;
+      --blue: #ebf3ff;
+      --shadow: 0 12px 32px rgba(36, 50, 63, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #fffaf8 0%, #f7fffc 100%);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 20px 16px 40px;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .hero, .card {
+      background: var(--card);
+      border: 1px solid rgba(233, 238, 243, 0.95);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 24px 20px;
+      margin-bottom: 16px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--mint);
+      color: #0f7a60;
+      font-weight: 700;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 8px;
+      line-height: 1.35;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .lead {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .card {
+      padding: 18px 16px;
+    }
+
+    .step {
+      display: inline-block;
+      background: var(--blue);
+      color: #2354b8;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .note {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 700;
+      border-radius: 18px;
+      padding: 16px 14px;
+      margin-top: 14px;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+
+    .btn:active {
+      transform: scale(.99);
+    }
+
+    .btn-primary {
+      background: var(--mint-strong);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: var(--pink);
+      color: #ab3f34;
+    }
+
+    .btn-soft {
+      background: #f7fafc;
+      color: #2354b8;
+      border: 1px solid var(--line);
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-badge">保護者テスト用ページ</div>
+      <h1>短い動画フィルターを<br>このスマホに入れる</h1>
+      <p class="lead">
+        できるだけ迷わないように、入れ方と更新をここにまとめました。<br>
+        このページを開いたまま、順に押せば大丈夫です。
+      </p>
+      <a class="btn btn-primary" href="https://play.google.com/apps/testing/jp.gan12.shortvideofilter">このスマホに入れる</a>
+      <a class="btn btn-secondary" href="https://play.google.com/apps/testing/jp.gan12.shortvideofilter">最新版にする</a>
+      <a class="btn btn-soft" href="./">プライバシーポリシーを見る</a>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <div class="step">STEP 1</div>
+        <h2>最初だけ、テスター参加を押します</h2>
+        <p>上の「このスマホに入れる」を押してください。</p>
+        <p class="note">画面が開いたら、テスター参加やインストールを順に押します。</p>
+      </section>
+
+      <section class="card">
+        <div class="step">STEP 2</div>
+        <h2>次からは、同じページで更新できます</h2>
+        <p>新しい版が出たら、上の「最新版にする」を押してください。</p>
+        <p class="note">Play 側に新しい版が出ていれば、そのまま更新できます。</p>
+      </section>
+
+      <section class="card">
+        <div class="step">STEP 3</div>
+        <h2>使ってみて気づいたことを送ってください</h2>
+        <ul>
+          <li>ここが分かりにくかった</li>
+          <li>ここで止まらなかった</li>
+          <li>ここは使いやすかった</li>
+          <li>色や言い方の違和感</li>
+        </ul>
+        <p class="note">気づいたことは、このチャットにそのまま送ってもらえれば大丈夫です。</p>
+      </section>
+
+      <section class="card">
+        <div class="step">いまの配布版</div>
+        <h3>Play テスト配布版: 0.1.3</h3>
+        <p class="note">最終更新: 2026-03-22</p>
+        <p class="small">
+          ローカルでの細かい調整は続いています。<br>
+          Play に新しい版を上げたら、このページの「最新版にする」から入り直せば大丈夫です。
+        </p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
